@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family= BpmfLansui:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=BpmfHuninn:wght@200..700&display=swap')
 ') 
 
-* {padding:0;
-margin:0;
+* {padding: 0;
+margin: 0;
 box-sizing:border-box;}
 
 /*general styling*/
@@ -15,7 +15,12 @@ color:aquamarine;
 font-family: 'Bpmf Lansui', sans-serif;}
 /*background color*/
 
-header{background-color:rgb(61, 138, 221);}
+header{background-color:white;
+padding: 0 1rem;
+position:fixed;
+z-index:99;
+width:100%;
+box-shadow:0 2px 2px black;}
 h1{font-family: 'Bpmf Huninn', sans-serif;}
 main{background-color:lightblue;
 flex:1 0  auto;}
