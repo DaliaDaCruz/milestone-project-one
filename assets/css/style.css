@@ -1,3 +1,7 @@
+/*Google font imports*/
+@import url('https://fonts.googleapis.com/css2?family= BpmfLansui:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=BpmfHuninn:wght@200..700&display=swap')
+') 
+
 * {padding:0;
 margin:0;
 box-sizing:border-box;}
@@ -7,7 +11,8 @@ body{min-height:100vh;
     display:flex;
     flex-direction:column;
 /*generic project style*/
-color:white}
+color:aquamarine;
+font-family: 'Bpmf Lansui', sans-serif;}
 /*background color*/
 
 header{background-color:rgb(61, 138, 221);}
