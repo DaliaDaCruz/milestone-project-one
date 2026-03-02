@@ -1,0 +1,10 @@
+* {padding:0;
+margin:0;
+box-sizing:border-box;}
+
+/*background color*/
+
+header{background-color:rgb(61, 138, 221);}
+main{background-color:lightblue;}
+footer{background-color:lightcyan;}
+
