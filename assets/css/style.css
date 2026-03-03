@@ -55,7 +55,7 @@ h1 {
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid lightskyblue;
 }
 
 /* Navbar styles with dropdown toggle */
@@ -94,7 +94,7 @@ main {
 
 /*Hero image*/
 #hero {
-    height: 1000px;
+    height: 300px;
     width: 100%;
     background-image: url("../images/hero-image.png");
     background-size: cover;
@@ -114,8 +114,8 @@ text-align:center;
 #innovative>div, #best>div {line-height: 20px;
 margin-bottom:20px;}
 #why-us p {padding: 0 20px;}
-hr{border-top: 1px solid lightblue;
-margin:5px 0;}
+hr{border-top: 2px solid lightblue;
+margin:5px;}
 
 /* Footer */
 #social-networks {
@@ -175,3 +175,10 @@ margin:5px 0;}
         border-bottom: 1px solid white;
     }
 }
+/*about us section*/
+#why-us{display:flex;
+flex-direction:row;}
+#why-us>div{flex:1;}
+#best{order:1}
+#best>div{align-self: flex-start;}
+#innovative>div{align-self: flex-end;}
