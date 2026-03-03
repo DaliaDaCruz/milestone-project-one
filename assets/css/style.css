@@ -1,6 +1,5 @@
 /*Google font imports*/
-@import url('https://fonts.googleapis.com/css2?family= BpmfLansui:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=BpmfHuninn:wght@200..700&display=swap')
-');
+@import url('https://fonts.googleapis.com/css2?family= BpmfLansui:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=BpmfHuninn:wght@200..700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -15,18 +14,18 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #3a3a3a;
+    color: lightblue;
     font-family: 'Lato', sans-serif;
 }
 
 /* Header */
 header {
-    background-color: #ffffff;
+    background-color: white;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px lightskyblue;
+    box-shadow: 0 2px 2px lightblue;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -38,24 +37,25 @@ header a {
 }
 
 h1 {
-    font-family: 'Bpmf Huninn', sans-serif;
+    font-family: 'BpmfLansui', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: lightskyblue;
 }
 
 #menu {
+    display: flex;
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
 .active {
-    border-bottom: 1px solid lightskyblue;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /* Navbar styles with dropdown toggle */
@@ -80,16 +80,23 @@ nav {
 }
 
 .nav-toggle-label {
+    display: none;
     font-size: 2rem;
 }
-
 
 /* Main content */
 main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 79px;
+}
+
+/*Hero image*/
+#hero {
+    height: 600px;
+    width: 100%;
+    background-image: > url(assets/images/hero-image.png);
 }
 
 /* Footer */
@@ -98,24 +105,18 @@ main {
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;}
+    list-style-type: none;
+}
 
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: white;}
+    color: lightskyblue;
+}
 
-footer{background-color:lightblue;}
-#social-networks{text-align:center;
-padding: 20px 0;
-display:flex;
-justify-content: space-evenly;}
-#social-network i{font-size:160px;
-padding:5%;
-color: white;}
-
-/* Media query: tablets (768px and up) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -152,8 +153,7 @@ color: white;}
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover{
-        border-bottom: 1px solid lightskyblue;
+    #menu a:hover {
+        border-bottom: 1px solid white;
     }
 }
-
