@@ -98,16 +98,21 @@ main {
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
-}
+    list-style-type: none;}
 
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color: white;
-}
+    color: white;}
 
-footer{background-color:lightcyan;}
+footer{background-color:lightblue;}
+#social-networks{text-align:center;
+padding: 20px 0;
+display:flex;
+justify-content: space-evenly;}
+#social-network i{font-size:160px;
+padding:5%;
+color: white;}
 
 /* Media query: tablets (768px and up) */
 @media screen and (min-width: 768px) {
