@@ -86,7 +86,7 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightblue;
+
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 79px;
@@ -94,10 +94,28 @@ main {
 
 /*Hero image*/
 #hero {
-    height: 600px;
+    height: 1000px;
     width: 100%;
-    background-image: url(assets/images/hero-image.png);
+    background-image: url("../images/hero-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+#about-us{width:90%;
+    margin:20px auto;
+}
+
+#about-us h2{ font-family:'BpmfLansui', sans-serif;
+color:lightblue;
+text-align:center;
+}
+
+#innovative>div, #best>div {line-height: 20px;
+margin-bottom:20px;}
+#why-us p {padding: 0 20px;}
+hr{border-top: 1px solid lightblue;
+margin:5px 0;}
 
 /* Footer */
 #social-networks {
@@ -130,7 +148,7 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
