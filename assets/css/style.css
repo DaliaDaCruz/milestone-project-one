@@ -171,6 +171,17 @@ hr {
     color: lightskyblue;
 }
 
+#cover-circle-bg {
+    background: url("../images/Location.jpg") no-repeat center top;
+    background-size: cover;
+    height: 90vw;
+    width:90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
