@@ -234,6 +234,13 @@ hr {
     height: 200px;
     object-fit: cover;
 }
+/* Gallery section*/
+#photos img {width:100%;
+    border-color: lightskyblue;
+    border-width: 2px;
+    border-style: solid;
+}
+#photos{line-height:0;}
 
 /* Footer */
 footer {
