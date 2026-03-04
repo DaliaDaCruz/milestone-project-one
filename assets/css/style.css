@@ -124,16 +124,19 @@ main {
     font-size:130%;
     border-radius: 8px;
 }
+#cover-text h2,
+#cover-text h3 {
+    color: white;
+}
 
 #about-us {
     width: 90%;
     margin: 20px auto;
 }
 
-#about-us h2 {
-    font-family: 'BpmfLansui', sans-serif;
-    color: lightblue;
+#about-us h2 {margin-bottom: 20px;
     text-align: center;
+    font-size: 280%;
 }
 
 #innovative>div,
@@ -148,7 +151,7 @@ main {
 
 hr {
     border-top: 2px solid lightblue;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 /*services section*/
