@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: lightblue;
+    color: rgb(64, 159, 218);
     font-family: 'Lato', sans-serif;
 }
 
@@ -41,7 +41,7 @@ h2,
 h3 {
     font-family: 'BpmfLansui', sans-serif;
     letter-spacing: 2px;
-    color: lightblue;
+    color: rgb(64, 159, 218);
 }
 
 h1,
@@ -65,7 +65,7 @@ h2 {
 }
 
 .active {
-    border-bottom: 1px solid lightskyblue;
+    border-bottom: 1px solid rgb(64, 159, 218);
 }
 
 /* Navbar styles with dropdown toggle */
@@ -75,7 +75,7 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px lightskyblue;
+    box-shadow: 0 2px 2px rgb(64, 159, 218);
     display: none;
     top: 100%;
 }
