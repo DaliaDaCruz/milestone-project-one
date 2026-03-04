@@ -154,8 +154,6 @@ hr {
     margin: 5px 0;
 }
 
-/*services section*/
-
 /* Footer */
 #social-networks {
     text-align: center;
@@ -180,6 +178,11 @@ hr {
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto;   
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -218,6 +221,20 @@ hr {
         margin-top: 79px;
     }
 }
+/*about us section*/
+#innovative,
+#best{display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#innovative>div,
+#best>div {width: 75%}
+
+#best > div {
+    text-align: end;
+    align-self: flex-end;
+}
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -246,4 +263,13 @@ hr {
 
 #innovative>div {
     align-self: flex-end;
+}
+@media screen and (min-width: 1200px) {
+    #why-us{display: flex;
+        flex-direction: row;
+    }
+    #why-us > div{flex:1;}
+    #best{order:1;}
+    #best > div {align-self:self-start;}
+    #innovative > div {align-self:flex-end;}
 }
