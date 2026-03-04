@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--meta tags for screen engines-->
     <meta name="description" content="clean, cleaning, sanitising, business cleaning, London">
     <meta name="keywords"
@@ -24,7 +24,8 @@
 <body>
     <!--header-->
     <header>
-        <a href="index.html" <h1 id="logo">Eco SanitAll</h1>
+        <a href="index.html">
+            <h1 id="logo">Eco SanitAll</h1>
         </a>
         <input type="checkbox" id="nav-toggle" />
         <label for="nav-toggle" class="nav-toggle-label">☰</label>
@@ -44,65 +45,58 @@
         <div id="cover-circle-bg"></div>
 
         <!--opening time1.0-->
-        <main id="Opening Times" class="mt-auto">
+        <section id="opening-times" class="mt-auto">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
                         <h2 class="display-6">Opening Times <i class="fas fa-clock"></i></h2>
                         <ul class="list-unstyled">
-                            <br>
-                            <li><i class="fas fa-calendar"></i> Monday to Friday: 9am - 5pm</li> <br>
-                            <br>
-                            <li><i class="fas fa-calendar"></i> Saturday: 10am - 4pm</li> <br>
-                            <br>
-                            <li><i class="fas fa-calendar"></i> Sunday & Bank Holidays: Closed</li> </br>
+                            <li><i class="fas fa-calendar"></i> Monday to Friday: 9am - 5pm</li>
+
+                            <li><i class="fas fa-calendar"></i> Saturday: 10am - 4pm</li>
+
+                            <li><i class="fas fa-calendar"></i> Sunday & Bank Holidays: Closed</li>
                         </ul>
 
                     </div>
                 </div>
             </div>
+        </section>
+        <!--Message us form-->
+        <section id="message">
+            <div class="" container">
+                <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net" target="_blank"></form>
+                <h2> Message Us <i class="fas fa-pen"></i></h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <label for="message-box"> Your Message</label>
+                <textarea name="message" id="message-box" class="text-input" required></textarea>
+                <button type="submit" class="join-button">Submit</button>
+                </form>
+            </div>
+        </section>
 
-            <!--Message us form-->
-            <section id="message"></section>
-            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net" target="_blank"></form>
-            <h2> Message Us <i class="fas fa-pen"></i></h2>
-            <label for="first-name">First Name</label>
-            <input type="text" name="first_name" id="first-name" class="text-input" required>
-            <br>
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last_name" id="last-name" class="text-input" required>
-            <br>
-            <label for="email-address">Email Address</label>
-            <input type="email" name="email_address" id="email-address" class="text-input" required>
-            <br>
-            <label for="message-box"> Your Message</label>
-            <textarea name="message" id="message-box" class="text-input" required></textarea>
-            <button type="submit" class="join-button">Submit</button>
-            
-<!--contact information-->
-            <main id="contact" class="mt-auto">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <h2 class="display-6">Contact Us <i class="fas fa-phone"></i></h2>
-                        </div>
-                        <ul class="list-unstyled">
-                            <p class="lead">We are here to help!</p>
-                            <p class="lead">Please feel free to contact us using the information below:</p>
-                            <br>
-                            <li><i class="fas fa-envelope"></i> info@ecosanitall.com</li>
-                            <br>
-                            <li><i class="fas fa-phone"></i> 07706488192</li>
-                            <br>
-                            <li><i class="fas fa-map-marker-alt"></i> 156 Alexander Road, London, UK</li>
-                            <br>
-                        </ul>
+        <!--contact information-->
+        <section id="contact" class="mt-auto">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h2 class="display-6">Contact Us <i class="fas fa-phone"></i></h2>
+                        <p class="lead">We are here to help!</p>
+                        <p class="lead">Please feel free to contact us using the information below:</p>
                     </div>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope"></i> info@ecosanitall.com</li>
+                        <li><i class="fas fa-phone"></i> 07706488192</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 156 Alexander Road, London, UK</li>
+                    </ul>
                 </div>
-                </div>
-            </main>
-
-        </main>
+            </div>
+        </section>
 
         <!--footer-->
         <footer>
