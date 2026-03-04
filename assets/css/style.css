@@ -107,6 +107,11 @@ main {
     margin-top: 79px;
 }
 
+p {
+    text-align: center;
+    justify-content: center;
+}
+
 #Opening\ Times {
     text-align: center;
 }
@@ -157,6 +162,20 @@ main {
     margin-bottom: 20px;
 }
 
+p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+/*Why choose us section*/
+#why-us{width:90%;
+margin:20px auto;}
+
+#why-us h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
 #why-us p {
     padding: 0 20px;
 }
@@ -189,9 +208,9 @@ hr {
     box-shadow: 0 2px 8px lightskyblue;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display:flex;
-    flex-direction:column;
-    height:100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card:hover {
@@ -201,9 +220,9 @@ hr {
 
 .card-body {
     padding: 15px;
-    display:flex;
-    flex-direction:column;
-    flex:1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .card-title {
@@ -214,7 +233,7 @@ hr {
 .card-text {
     margin-bottom: 15px;
     color: lightskyblue;
-    flex:1;
+    flex: 1;
 }
 
 .card-footer {
@@ -222,25 +241,31 @@ hr {
     background-color: white;
     font-weight: bold;
     color: lightskyblue;
-    margin-top:auto;
+    margin-top: auto;
 }
 
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
+
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
 /* Gallery section*/
-#photos img {width:100%;
+#photos img {
+    width: 100%;
     border-color: lightskyblue;
     border-width: 2px;
     border-style: solid;
 }
-#photos{line-height:0;}
+
+#photos {
+    line-height: 0;
+}
 
 /* Footer */
 footer {
@@ -283,6 +308,15 @@ footer {
     margin-right: auto;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+
+    /*gallery*/
+    #photos {
+        column-count: 2;
+    }
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -318,7 +352,10 @@ footer {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
-    .card img{height:200px}
+
+    .card img {
+        height: 200px
+    }
 }
 
 /*about us section*/
@@ -338,10 +375,16 @@ footer {
     text-align: end;
     align-self: flex-end;
 }
+
 .card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+/*gallery*/
+#photos {
+    column-count: 3;
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -349,7 +392,14 @@ footer {
     #menu a:hover {
         border-bottom: 1px solid white;
     }
-    .card img{height:250px;}
+
+    #photos {
+        column-count: 4;
+    }
+
+    .card img {
+        height: 250px;
+    }
 }
 
 /*about us section*/
