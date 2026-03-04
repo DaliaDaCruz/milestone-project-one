@@ -36,11 +36,21 @@ header a {
     color: inherit;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'BpmfLansui', sans-serif;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    color: lightskyblue;
+    color: lightblue;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 2rem;
 }
 
 #menu {
@@ -102,20 +112,44 @@ main {
     background-repeat: no-repeat;
 }
 
-#about-us{width:90%;
-    margin:20px auto;
+#about-us {
+    width: 90%;
+    margin: 20px auto;
 }
 
-#about-us h2{ font-family:'BpmfLansui', sans-serif;
-color:lightblue;
-text-align:center;
+#about-us h2 {
+    font-family: 'BpmfLansui', sans-serif;
+    color: lightblue;
+    text-align: center;
 }
 
-#innovative>div, #best>div {line-height: 20px;
-margin-bottom:20px;}
-#why-us p {padding: 0 20px;}
-hr{border-top: 2px solid lightblue;
-margin:5px;}
+#innovative>div,
+#best>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#why-us p {
+    padding: 0 20px;
+}
+
+hr {
+    border-top: 2px solid lightblue;
+    margin: 5px;
+}
+
+/*services section*/
+
+#services .card-footer {
+    font-weight: bold;
+    color: highlight;
+    background-color: transparent;
+}
+
+#services .card {
+    margin-bottom: 1.5rem;
+}
+
 
 /* Footer */
 #social-networks {
@@ -134,6 +168,11 @@ margin:5px;}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
+    /*services*/
+    #services.card-body {
+        min-height: 191px;
+    }
 
     /* Header */
     nav {
@@ -175,10 +214,29 @@ margin:5px;}
         border-bottom: 1px solid white;
     }
 }
+
+#services .card-body {
+    min-height: auto;
+}
+
 /*about us section*/
-#why-us{display:flex;
-flex-direction:row;}
-#why-us>div{flex:1;}
-#best{order:1}
-#best>div{align-self: flex-start;}
-#innovative>div{align-self: flex-end;}
+#why-us {
+    display: flex;
+    flex-direction: row;
+}
+
+#why-us>div {
+    flex: 1;
+}
+
+#best {
+    order: 1
+}
+
+#best>div {
+    align-self: flex-start;
+}
+
+#innovative>div {
+    align-self: flex-end;
+}
