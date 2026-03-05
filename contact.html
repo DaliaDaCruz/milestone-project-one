@@ -62,20 +62,23 @@
                 </div>
             </div>
         </section>
-        <!--Message us form-->
+
+        <!--Message us form with bootstrap-->
         <section id="message">
-            <div class="container">
-                <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net" target="_blank"></form>
-                <h2> Message Us <i class="fas fa-pen"></i></h2>
-                <label for="first-name">First Name</label>
-                <input type="text" name="first_name" id="first-name" class="text-input" required>
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last_name" id="last-name" class="text-input" required>
-                <label for="email-address">Email Address</label>
-                <input type="email" name="email_address" id="email-address" class="text-input" required>
-                <label for="message-box"> Your Message</label>
-                <textarea name="message" id="message-box" class="text-input" required></textarea>
-                <button type="submit" class="join-button">Submit</button>
+            <div class="mb-3">
+                <div class="container">
+                    <form id="signup-form" method="POST" target="_blank"></form>
+                    <h2> Message Us <i class="fas fa-pen"></i></h2>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first_name" id="first-name" placeholder="First Name" class="text-input" required>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last_name" id="last-name" class="text-input" placeholder="Last Name"required>
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" placeholder="Your message here..."id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
             </div>
         </section>
 
