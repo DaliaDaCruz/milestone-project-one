@@ -195,11 +195,25 @@ hr {
     text-align: center;
     padding: 15px;
 }
-#message {width:100%
-max-width:600px;
+
+#message {justify-content: center;
+width:100%;
+align-items: center;
 display:flex;
 flex-direction:column;
-gap:0.5rem;}
+text-align:center;}
+
+#message>div{display:flex;
+flex-direction:column;
+align-items:center;
+padding:15px;
+width:100%;
+max-width: 600px;}
+
+#message form{display:flex;
+flex-direction:column;
+gap: 0.5rem;
+width:100%;}
 
 #contact>div {
     display: flex;
