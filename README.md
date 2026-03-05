@@ -35,7 +35,7 @@ We guarantee a clean and safe environment for all!
   + [Navigation Bar](#navigation-bar)
   + [Buttons](#buttons)
   + [Page Heading & Sub Navigations](#page-heading-and-sub-navigations)
-  + [Footer] (#footer)
+  + [Footer](#footer)
 - [Wireframes](#wireframes)
 - [Features](#features)
   + [Current Features](#current-features)
@@ -190,7 +190,7 @@ Adding a shop to sell products used for cleaning/sanitising as well as fog or oz
 
 # Testing
 
-- Please refer [here](TESTING.md) for more information on testing.
+- Testing information is on the testing.md file.
 
 
 # Deployment
