@@ -64,30 +64,27 @@
         </section>
 
         <!--Message us form-->
-        <section id="message" class="container">
-            <h2> Message Us <i class="fas fa-pen"></i></h2>
-            <form class="row g-3 sharp-corners">
-                <div class="col-lg-4">
-                    <label for="full-name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="full-name">
-                </div>
-                <div class="col-lg-4">
-                    <label for="phonenumber" class="form-label">Phone number</label>
-                    <input type="number" class="form-control" id="phonenumber">
-                </div>
-                <div class="col-lg-4">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="col-12">
-                    <label for="message-us" class="form-label">Message</label>
-                    <textarea class="form-control" id="message-us" rows="3"></textarea>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </div>
+
+        <div class="container">
+            <form id="contact" action="" method="post">
+                <h3>Message Us</h3>
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
             </form>
-        </section>
+        </div>
 
         <!--contact information-->
         <section id="contact" class="mt-auto">
