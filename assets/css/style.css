@@ -337,7 +337,7 @@ fieldset {
   color: #888;
 }
 /*Contact details on ecosanitall*/
-#contact>div {
+#contact-info>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,16 +345,16 @@ fieldset {
     padding: 15px;
     box-shadow: none;
 }
-#contact{background:transparent;
+#contact-info{background:transparent;
 box-shadow:none;
 padding:10px 0;
 margin:0 auto;
 width:100%;}
 
-#contact h2, #contact h3{margin-top:0;
+#contact-info h2, #contact-info h3{margin-top:0;
 margin-bottom:5px;
 text-align:center;}
-#contact textarea{height:100px;
+#contact-info textarea{height:100px;
 width:100%;
 max-width:100%;
 resize:none;}
@@ -564,11 +564,9 @@ footer {
     #menu {
         display: flex;
     }
-
     #menu>li {
         padding-left: 1rem;
     }
-
     .nav-toggle-label {
         display: none;
     }
@@ -578,7 +576,6 @@ footer {
         line-height: 75px;
         margin: 0 0.5rem;
     }
-.card img { height: 200px; }
 
     #innovative, #best {
         display: flex;
@@ -638,7 +635,6 @@ footer {
 }
 
   div#carousel {
-  image-resolution: inherit;
   background: white;
   padding-top: 10%;
   font-size: 0;
@@ -646,7 +642,7 @@ footer {
   overflow: hidden;
 }
 }
-@media screen and (min-width: 1200px and up) {
+@media screen and (min-width: 1200px ) {
     #why-us {
         display: flex;
         flex-direction: row;
