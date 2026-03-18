@@ -107,19 +107,6 @@ main {
     margin-top: 79px;
 }
 
-/*contact info page
-p {
-    text-align: center;
-    justify-content: center;
-}
-
-#opening-times {
-    text-align: center;
-}
-
-#message{text-align:center;
-}*/
-
 /*Hero image*/
 #hero {
     position: relative;
@@ -457,8 +444,7 @@ figure#spinner img {
   left: 50%;
  margin-left: -15%;
  transform-origin:50% 50% -600px;
- outline:1px solid transparent;
- box-shadow: 0 5px 15px lightblue; 
+ outline:1px solid transparent; 
 }
 figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
 }
@@ -481,6 +467,22 @@ div#carousel ~ span {
   border-bottom: none; 
   line-height: 0; }
 div#carousel ~ span:hover { color: #888; cursor: pointer; }
+.ss-icon {
+    font-size: 3rem;
+    color: lightskyblue;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 20px;
+    z-index: 100;
+    position: relative;
+    top: -50px; /* Adjust this to move arrows up or down */
+    transition: transform 0.2s ease;
+}
+
+.ss-icon:hover {
+    transform: scale(1.2);
+    color: lightskyblue;
+}
 
 /*gallery image fading and popping at different times*/
 .card {
