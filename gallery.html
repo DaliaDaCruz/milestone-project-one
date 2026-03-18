@@ -56,9 +56,9 @@
         <label for="nav-toggle" class="nav-toggle-label">☰</label>
         <nav>
             <ul id="menu">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -74,7 +74,8 @@
     <img src="assets/images/car.jpg" alt="car cleaning">
     <img src="assets/images/guest-bed.jpeg" alt="guest bed hotel">
     <img src="assets/images/hotel.jpeg" alt="hotel carpet/matress">
-        <img src="assets/images/leather-car-cleaning" alt="leather car cleaning">
+    <img src="assets/images/leather-car-cleaning.JPG" alt="leather car cleaning">
+     <img src="assets/images/carpet-cleaning.jpg" alt="carpet cleaning"> 
   </figure>
 </div>
 <span class="ss-icon" onclick="galleryspin('-')">&lt;</span>
@@ -110,7 +111,7 @@
    <script>
 var angle = 0;
 
-function gallerySpin(sign) {
+function galleryspin(sign) {
     var spinner = document.querySelector("#spinner");
     if (!sign) {
         angle = angle + 45;
