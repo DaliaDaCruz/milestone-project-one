@@ -68,11 +68,11 @@ To see our professional team in action, you can always access our website galler
 
   
 * As a prospective visitor I would like to be able to contact the company directly for any information. As it is really time consuming when you have to look up on a few pages online for a company number.
-<img width="1347" height="523" alt="Screenshot 2026-03-18 1 26 29 PM" src="https://github.com/user-attachments/assets/7a0ce288-8722-4d79-bb6a-6ee42b76db5c" />
+<img width="789" height="396" alt="Screenshot 2026-03-18 4 49 47 PM" src="https://github.com/user-attachments/assets/6bcbd6b3-9f70-4952-a0ff-6ab4e260abc8" />
+
 
 *As a prospective customer and business owner I would look for the cheapest or best quality price company in the market.
-<img width="1365" height="722" alt="Screenshot 2026-03-18 1 38 06 PM" src="https://github.com/user-attachments/assets/da1a7351-35c3-4da7-b5f8-9d9ecab0ad00" />
-
+<img width="1076" height="417" alt="Screenshot 2026-03-18 4 52 30 PM" src="https://github.com/user-attachments/assets/a03ebf16-c7a5-427f-a0ad-ee885518164a" />
 
 
 ### Business Owners
@@ -81,10 +81,11 @@ To see our professional team in action, you can always access our website galler
   <img width="600" height="400" alt="Screenshot 2026-03-05 2 07 16 AM" src="https://github.com/user-attachments/assets/bbae14ef-f617-44b7-8703-8d9a8c3d74a4" />
   
 * As the business owner, I want my website to feature links to my social media channels.
-  <img width="964" height="395" alt="Screenshot 2026-03-18 1 29 06 PM" src="https://github.com/user-attachments/assets/1c66258e-6530-42c6-9e7a-d25d9ffb6b19" />
+  <img width="841" height="91" alt="Screenshot 2026-03-18 4 53 47 PM" src="https://github.com/user-attachments/assets/f1048f2f-0a9b-46e6-bd7d-1fcae53bad86" />
+
 
 * As a business owner I want my website to have prospective customers who can trust me, I am the real deal. Have learned through other ventures that when customers find you on social platforms many times they ask for a webpage link as if it would be proof of the business not being a scam or something of sorts. With this hopefully visitors will create leads.
-<img width="1365" height="722" alt="Screenshot 2026-03-18 1 33 55 PM" src="https://github.com/user-attachments/assets/aa74df47-8145-4f6f-81a8-b472d93c483b" />
+<img width="1075" height="199" alt="Screenshot 2026-03-18 4 54 39 PM" src="https://github.com/user-attachments/assets/5126fead-7c37-43f1-b4c6-25d71cb5bb63" />
 
 
 ## Design
