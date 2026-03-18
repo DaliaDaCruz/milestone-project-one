@@ -445,15 +445,18 @@ div#carousel {
 }
 figure#spinner { 
   transform-style: preserve-3d; 
-  height: 300px; 
-  transform-origin: 50% 50% -500px; 
+  height: 400px; 
+  transform-origin: 50% 50% -600px; 
   transition: 1s; 
+  margin: 0 auto;
 } 
 figure#spinner img { 
-  width: 40%; max-width: 425px; 
-  position: absolute; left: 30%;
-  transform-origin: 50% 50% -500px;
-  outline:1px solid transparent; 
+  width: 30%; max-width: 500px; 
+  position: absolute; left: 50%;
+ margin: left -15%;
+ transform-origin:50% 50% -600px;
+ outline:1px solid transparent;
+ box-shadow: 0 5px 15px lightblue; 
 }
 figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
 }
@@ -521,15 +524,7 @@ footer {
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
 
-    /*gallery carousel*/
-    div#carousel {
-  image-resolution: inherit;
-  background: white;
-  padding-top: 10%;
-  font-size: 0;
-  margin-bottom: 3rem;
-  overflow: hidden;
-}
+
 
     
 }
@@ -598,15 +593,7 @@ footer {
     height: 250px;
     object-fit: cover;
 }
-/*gallery*/
-  div#carousel {
-  image-resolution: inherit;
-  background: white;
-  padding-top: 10%;
-  font-size: 0;
-  margin-bottom: 3rem;
-  overflow: hidden;
-}
+
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -671,13 +658,7 @@ footer {
     #innovative>div {
         align-self: flex-end;
     }
-  div#carousel {
-  image-resolution: inherit;
-  background: white;
-  padding-top: 10%;
-  font-size: 0;
-  margin-bottom: 3rem;
-  overflow: hidden;
-}
+figure#spinner, figure#spinner img{transform-origin: 50% 50% -800px;}
+div#carousel{padding-top: 5%;}
 
 }
