@@ -230,10 +230,10 @@ body {
 }
 
 .container {
-  max-width: 300px;
-  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  position: center;
+  margin-left:auto;
+  margin-right:auto;      
 }
 
 #contact input[type="text"],
@@ -547,11 +547,6 @@ footer {
              margin: 0 20px;
              margin-top:20px;}
 }                   
-
-
-
-    
-}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
