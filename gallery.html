@@ -77,8 +77,8 @@
         <img src="assets/images/leather-car-cleaning" alt="leather car cleaning">
   </figure>
 </div>
-<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
-<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+<span class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span class="ss-icon" onclick="galleryspin('')">&gt;</span>
 
 </main>
 
@@ -109,28 +109,16 @@
     <!--spinner carousel java codepen-->
    <script>
 var angle = 0;
-var timer;
 
-function galleryspin(sign) { 
-    clearInterval(timer); // Stop auto-play when user clicks
-    rotate(sign);
-    startTimer(); // Restart auto-play after interaction
-}
-function rotate(sign) {
+function gallerySpin(sign) {
     var spinner = document.querySelector("#spinner");
-    if (!sign) { 
-        angle = angle + 45; 
-    } else { 
-        angle = angle - 45; 
+    if (!sign) {
+        angle = angle + 45;
+    } else {
+        angle = angle - 45;
     }
-    spinner.style.transform = "rotateY(" + angle + "deg)";
+    spinner.setAttribute("style", "transform: rotateY(" + angle + "deg);");
 }
-function startTimer() {
-    timer = setInterval(function() {
-        rotate(''); // Rotate forward every 3 seconds
-    }, 3000);
-}
-window.onload = startTimer;
 </script>
     
 </body>
