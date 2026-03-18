@@ -532,8 +532,21 @@ footer {
     margin-right: auto;
 }
 
-/* Media query: large or landscape phones (576px and up) */
-@media screen and (min-width: 576px) {
+/* Media query: large or landscape phones (320px and up) */
+@media screen and (min-width: 320px) {
+    div#carousel{perspective:800px;
+                 padding-top:20%}
+    figure#spinner{transform-origin: 50% 50% -250px;
+                   height:250px;}
+    figure#spinner img{width:70%;
+                       max-width:none;
+                       left:50%;
+                       margin-left:-35%;
+                       transform-origin: 50% 50% -250px;}
+    .ss-icon{font-size:2.5rem;
+             margin: 0 20px;
+             margin-top:20px;}
+}                   
 
 
 
