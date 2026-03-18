@@ -433,7 +433,7 @@ div#carousel {
 figure#spinner { 
   transform-style: preserve-3d; 
   height: 400px; 
-  transform-origin: 50% 50% -600px; 
+  transform-origin: 50% 50% -700px; 
   transition: 1s; 
   margin: 0 auto;
 } 
@@ -677,7 +677,7 @@ footer {
     #innovative>div {
         align-self: flex-end;
     }
-figure#spinner, figure#spinner img{transform-origin: 50% 50% -800px;}
+figure#spinner, figure#spinner img{transform-origin: 50% 50% -500px;}
 div#carousel{padding-top: 5%;}
 
 }
