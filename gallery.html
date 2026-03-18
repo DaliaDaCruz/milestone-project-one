@@ -50,29 +50,12 @@
     <img src="assets/images/carpet.jpg" alt>
     <img src="assets/images/guest-bed.jpeg" alt>
     <img src="assets/images/hotel.jpeg" alt>
-    <img src="assets/images/leather car clean.JPG" alt>
+    <img src="assets/images/leather-car-clean.JPG" alt>
   </figure>
 </div>
 <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
 <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
 </main>
-
-
-    <!----Option1
-    <main>
-        <section id="gallery" class="container section">
-            <h2>Gallery</h2>
-            <div id="photos" class="row">
-                <img src="assets/images/ape.jpeg" alt="bussiness ape" class="img-fluid">
-                <img src="assets/images/armchair.jpeg" alt="armchair" class="img-fluid">
-                <img src="assets/images/rug.jpeg" alt="rug" class="img-fluid">
-                <img src="assets/images/guest-bed.jpeg" alt="guest bed" class="img-fluid">
-                <img src="assets/images/buggy.jpeg" alt="buggy" class="img-fluid">
-                <img src="assets/images/hotel.jpeg" alt="hotel" class="img-fluid">
-            </div>
-        </section>    
-    </main>
--->
 
     <!--footer-->
     <footer>
@@ -97,7 +80,20 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
-
+<!--spinner carousel java codepen-->
+    <script>
+var angle = 0;
+function galleryspin(sign) { 
+    var spinner = document.querySelector("#spinner");
+    if (!sign) { 
+        angle = angle + 45; 
+    } else { 
+        angle = angle - 45; 
+    }
+    spinner.style.transform = "rotateY(" + angle + "deg)";
+}
+</script>
+    
 </body>
 
 </html>
