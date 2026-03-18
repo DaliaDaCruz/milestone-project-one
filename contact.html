@@ -44,89 +44,80 @@
         <!--adding picture location-->
         <div id="cover-circle-bg"></div>
 
-        <!--opening time1.0-->
-        <section id="opening-times" class="mt-auto">
+
+        <!----get image on contact page between info and contact-->
+        <section id="opening-times">
+            <div>
+                <h2>Opening Hours</h2>
+                <p>Mon- Fri : 9 am to 5pm</p>
+                <p>Sat : 10am to 4pm</p>
+            </div>
+        </section>
+
+            <!--Message us form-->
+
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <h2 class="display-6">Opening Times <i class="fas fa-clock"></i></h2>
+                <form id="contact" action="" method="post">
+                    <h3>Message Us</h3>
+                    <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!--contact information-->
+            <section id="contact" class="mt-auto">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <h2 class="display-6">Contact Us <i class="fas fa-phone"></i></h2>
+                            <p class="lead">We are here to help!</p>
+                            <p class="lead">Please feel free to contact us using the information below:</p>
+                        </div>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-calendar"></i> Monday to Friday: 9am - 5pm</li>
-
-                            <li><i class="fas fa-calendar"></i> Saturday: 10am - 4pm</li>
-
-                            <li><i class="fas fa-calendar"></i> Sunday & Bank Holidays: Closed</li>
+                            <li><i class="fas fa-envelope"></i> info@ecosanitall.com</li>
+                            <li><i class="fas fa-phone"></i> 07706488192</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 156 Alexander Road, London, UK</li>
                         </ul>
-
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--Message us form-->
+            <!--footer-->
+            <footer>
+                <ul id="social-networks">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our Facebook page (opens in a new tab)">
+                            <i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our Tiktok page (opens in a new tab)">
+                            <i class="fa-brands fa-tiktok"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                            aria-label="Visit our Instagram page (opens in a new tab)">
+                            <i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </footer>
 
-        <div class="container">
-            <form id="contact" action="" method="post">
-                <h3>Message Us</h3>
-                <fieldset>
-                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-                </fieldset>
-                <fieldset>
-                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </fieldset>
-            </form>
-        </div>
-
-        <!--contact information-->
-        <section id="contact" class="mt-auto">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <h2 class="display-6">Contact Us <i class="fas fa-phone"></i></h2>
-                        <p class="lead">We are here to help!</p>
-                        <p class="lead">Please feel free to contact us using the information below:</p>
-                    </div>
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-envelope"></i> info@ecosanitall.com</li>
-                        <li><i class="fas fa-phone"></i> 07706488192</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 156 Alexander Road, London, UK</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!--footer-->
-        <footer>
-            <ul id="social-networks">
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page (opens in a new tab)">
-                        <i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Tiktok page (opens in a new tab)">
-                        <i class="fa-brands fa-tiktok"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in a new tab)">
-                        <i class="fa-brands fa-instagram"></i></a>
-                </li>
-            </ul>
-        </footer>
-
-        <!-- Font Awesome kit -->
-        <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+            <!-- Font Awesome kit -->
+            <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
     </main>
 </body>
 
