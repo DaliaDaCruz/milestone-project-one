@@ -80,10 +80,18 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
-<!--spinner carousel java codepen-->
-    <script>
+
+    <!--spinner carousel java codepen-->
+   <script>
 var angle = 0;
+var timer;
+
 function galleryspin(sign) { 
+    clearInterval(timer); // Stop auto-play when user clicks
+    rotate(sign);
+    startTimer(); // Restart auto-play after interaction
+}
+function rotate(sign) {
     var spinner = document.querySelector("#spinner");
     if (!sign) { 
         angle = angle + 45; 
@@ -92,6 +100,12 @@ function galleryspin(sign) {
     }
     spinner.style.transform = "rotateY(" + angle + "deg)";
 }
+function startTimer() {
+    timer = setInterval(function() {
+        rotate(''); // Rotate forward every 3 seconds
+    }, 3000);
+}
+window.onload = startTimer;
 </script>
     
 </body>
