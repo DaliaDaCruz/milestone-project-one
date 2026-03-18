@@ -39,7 +39,7 @@ We guarantee a clean and safe environment for all!
 - [Wireframes](#wireframes)
 - [Features](#features)
   + [Current Features](#current-features)
-  + [Fututre Features](#future-features)
+  + [Future Features](#future-features)
 - [Technologies used](#technologies-used)
   + [Languages Used](#languages-used)
   + [Frameworks Libraries and Programs](#frameworks-libraries-and-programs)
@@ -60,15 +60,31 @@ We guarantee a clean and safe environment for all!
 ### Prospective Customer
 
 * As a prospective customer I would like to see jobs done by this company, so I can decide if I want to book one of their services. A good way to do that is using social media, reviews and galleries on websites along with information.
+To see our professional team in action, you can always access our website gallery page to have a look at what services we have done in the past.
+<img width="1347" height="572" alt="Screenshot 2026-03-18 1 21 04 PM" src="https://github.com/user-attachments/assets/7a59246e-1db8-45b3-a3a8-4f0e6a4512a1" />
+  
 * As a prospective visitor I would like to see what other services this company offers compared to others.
+<img width="1347" height="572" alt="Screenshot 2026-03-18 1 24 17 PM" src="https://github.com/user-attachments/assets/8d0006d2-cb08-4c62-b801-b5a448446f67" />
+
+  
 * As a prospective visitor I would like to be able to contact the company directly for any information. As it is really time consuming when you have to look up on a few pages online for a company number.
+<img width="1347" height="523" alt="Screenshot 2026-03-18 1 26 29 PM" src="https://github.com/user-attachments/assets/7a0ce288-8722-4d79-bb6a-6ee42b76db5c" />
+
+*As a prospective customer and business owner I would look for the cheapest or best quality price company in the market.
+<img width="1365" height="722" alt="Screenshot 2026-03-18 1 38 06 PM" src="https://github.com/user-attachments/assets/da1a7351-35c3-4da7-b5f8-9d9ecab0ad00" />
+
 
 
 ### Business Owners
 
 * As the business owner, I want my website to be accessible and user-friendly on any device.
+  <img width="600" height="400" alt="Screenshot 2026-03-05 2 07 16 AM" src="https://github.com/user-attachments/assets/bbae14ef-f617-44b7-8703-8d9a8c3d74a4" />
+  
 * As the business owner, I want my website to feature links to my social media channels.
+  <img width="964" height="395" alt="Screenshot 2026-03-18 1 29 06 PM" src="https://github.com/user-attachments/assets/1c66258e-6530-42c6-9e7a-d25d9ffb6b19" />
+
 * As a business owner I want my website to have prospective customers who can trust me, I am the real deal. Have learned through other ventures that when customers find you on social platforms many times they ask for a webpage link as if it would be proof of the business not being a scam or something of sorts. With this hopefully visitors will create leads.
+<img width="1365" height="722" alt="Screenshot 2026-03-18 1 33 55 PM" src="https://github.com/user-attachments/assets/aa74df47-8145-4f6f-81a8-b472d93c483b" />
 
 
 ## Design
@@ -98,8 +114,8 @@ It is very important to use original pictures and as i mentioned, due to many la
 - The website has a Homepage, and then 3 further pages. Services, Gallery and Contact.
     - Homepage - Landing page with brief descriptions and reasons why to choose this company.
     - Services - Provides images and text information about the service and price. 
-    - Gallery - Provides images of jobs done in the past with before and after collage pictures. Avoiding customers to look back and forward at pictures to “compare the differences”.
-    - Contact -Provides a map, to show we are in North London but provide services to a wider area. Opening hours information, contact details and a message section in case someone has a query or needs a quote.
+    - Gallery - Provides images of jobs done in the past with before and after collage pictures. Avoiding customers to look back and forward at pictures to “compare the differences”. Added a 3d carousel using codepen, to the galllery as it keeps visitor engaged.
+    - Contact -Provides a map, to show we are in North London but provide services to a wider area. Opening hours information, contact details and a message section, used code pen example to create my form too, in case someone has a query or needs a quote.
 
 ### Navigation Bar
 
@@ -110,7 +126,7 @@ It is very important to use original pictures and as i mentioned, due to many la
 
 ### Buttons
 
-- On this project I have used only one button on the message form, on the contact page.
+- On this project I have used only one button on the message form, on the contact page.Which was created with the use of code pen form examples.
 
 
 ### Page Heading and Sub Navigations
@@ -140,6 +156,7 @@ It is very important to use original pictures and as i mentioned, due to many la
 
 - By using galaxy fold first design I have created a website that is fully responsive on all screen sizes.
 - I have used the Bootstrap grid system and Flex classes to adjust the layout based on the device screen size. This allows the images and texts to look good and be easy to read.
+- I have re adjusted styling in gallery service and contact pages and kept the responsiveness on all device sizes.
 
 ### Interactive elements
 
@@ -148,7 +165,6 @@ It is very important to use original pictures and as i mentioned, due to many la
 ## Fututre Features
 
 In future could have a separate section in services. One for business, one for domestic jobs.
-Add a carousel to the gallery with pictures of many other jobs.
 Adding a shop to sell products used for cleaning/sanitising as well as fog or ozone machine sale.
 
 # Technologies Used
@@ -185,7 +201,11 @@ Adding a shop to sell products used for cleaning/sanitising as well as fog or oz
 - [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
   - Google Chrome's Dev Tools were used while building the project to test responsiveness and for debugging.
 
+- [codepen] (https://codepen.io/trending)
+   - Codepen tools to build the message form on contact page and the 3d carousel on gallery.
+
 -[Stack Overflow] (https://stackoverflow.com) -Stack Overflow i used to look for ideas of how to stack my cards properly or how to make them fit the way i wanted, for example.
+
 
 
 # Testing
