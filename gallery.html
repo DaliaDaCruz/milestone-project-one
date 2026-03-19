@@ -22,10 +22,11 @@
 
      <!--Getting buttons to work on gallery-->  
     <style>
-    main {position:relative;
+    main {overflow:hidden;
     max-width:1200px;
     margin:0 auto;
     text-align: center;}
+        
     
     .ss-icon{
     display:inline-block;
@@ -33,15 +34,12 @@
     color:lightskyblue;
     cursor:pointer;
     user-select:none;
-    position:relative;
-    z-index:10;
-    margin:0 50px;
-    margin-top:-50px;
+    margin:0 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
     }
     
     .ss-icon:hover {color: navy;
-    transform:scale(1.2);
-    transition: transform 0.3s ease, color 0.3s ease;}
+    transform:scale(1.2);}
     </style>
 
 </head>
