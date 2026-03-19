@@ -424,8 +424,8 @@ margin:0 auto;}
 /* Gallery section used code pen 3d carousel gallery*/
 
 div#carousel { 
-  perspective: 1300px; 
-  background: white; 
+ perspective: 1200px; 
+  background: #100000; 
   padding-top: 10%; 
   font-size:0; 
   margin-bottom: 3rem; 
@@ -434,18 +434,18 @@ div#carousel {
 figure#spinner { 
   transform-style: preserve-3d; 
   height: 400px; 
-  transform-origin: 50% 50% -700px; 
+  transform-origin: 50% 50% -600px; 
   transition: 1s; 
-  margin: 0 auto;
+    margin: 0 auto;
 } 
 figure#spinner img { 
-  width: 30%; 
-  max-width: 500px; 
+  width: 30%; max-width: 500px; 
   position: absolute; 
   left: 50%;
- margin-left: -15%;
- transform-origin:50% 50% -700px;
- outline:1px solid transparent; 
+    margin-left: -15%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+   box-shadow: 0 5px 15px ligthskyblue; 
 }
 figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
 }
@@ -493,7 +493,18 @@ span[onclick*="''"] { right: 5%; }
 }
 .card:nth-child(2) { animation-delay: 0.2s; }
 .card:nth-child(3) { animation-delay: 0.4s; }
-
+/*check this again*/
+#gallery{display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        gap:20px;
+        width: 90%;
+        max-width: 1200px;
+        margin:40px auto;
+        }
+#gallery img {width: 100%;
+              height: 250px;
+              object-fit:cover;
+              border-radius: 8px;}
 /* Footer */
 footer {
     flex-shrink: 0;
@@ -699,14 +710,9 @@ footer {
     #innovative>div {
         align-self: flex-end;
     }
-figure#spinner { height:550px;
-        transform-origin: 50% 50% -500px;
+figure#spinner, 
+figure#spinner img{transform-origin: 50% 50% -800px;
     }
-figure#spinner img{width:40%;
-                  margin-left:-20%;
-                   transform-origin: 50% 50% -500px;
-                   height: 450px;
-    }
-div#carousel{perspective: 2000px;
+div#carousel{
     padding-top: 5%;}
 }
