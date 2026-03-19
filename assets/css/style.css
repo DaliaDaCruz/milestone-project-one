@@ -230,10 +230,10 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
-  margin-left:auto;
-  margin-right:auto;      
+    padding: 0 20px;
+      
 }
 
 #contact input[type="text"],
@@ -426,52 +426,42 @@ margin:0 auto;}
 div#carousel {
     perspective: 1000px; 
     background: white;
-    height: 500px; 
+    height: 600px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    margin-top: 100px; 
+    overflow: hidden; 
 }
 
 figure#spinner {
     transform-style: preserve-3d;
-    display:block;
-    height: 400px;
-    width: 100%;
-    transition: 1s;
-    margin: 0 auto;
-    position: relative;
-    transform-origin: 50% 50% -500px; 
-    min-width: 300px;
-    min-height: 250px;
-    background-color: white;
-}
+    height: 300px;
+    width:400px;
+    transition: 1s ease-in-out;
+    transform-origin: 50% 50% -500px;
+position:relative;} 
 
 figure#spinner img {
-    width: 300px; 
-    height: 350px;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -150%; 
-    margin-top: -125px;  
+    left: 0;
+    top: 0;
+    width: 400px;    
+    height: 300px;           
+    transform-origin: 50% 50% -500px; 
+    backface-visibility: hidden; 
     object-fit: cover;
     border: 5px solid white;
-    box-shadow: 0 10px 25px rgba(64, 159, 218, 0.2);
-    backface-visibility: hidden;
-    transform-origin: 50% 50% -500px;
 }
 
 /* Individual Image Rotations (45 degrees each) */
 figure#spinner img:nth-child(1) { transform: rotateY(0deg); }
-figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
-figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
-figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
-figure#spinner img:nth-child(5) { transform: rotateY(-180deg); }
-figure#spinner img:nth-child(6) { transform: rotateY(-225deg); }
-figure#spinner img:nth-child(7) { transform: rotateY(-270deg); }
-figure#spinner img:nth-child(8) { transform: rotateY(-315deg); }
+figure#spinner img:nth-child(2) { transform: rotateY(45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(135deg); }
+figure#spinner img:nth-child(5) { transform: rotateY(180deg); }
+figure#spinner img:nth-child(6) { transform: rotateY(225deg); }
+figure#spinner img:nth-child(7) { transform: rotateY(270deg); }
+figure#spinner img:nth-child(8) { transform: rotateY(315deg); }
 
 /* arrows  */
 .ss-icon {
@@ -611,7 +601,7 @@ footer {
     #innovative > div, #best > div { width: 75%; }
     #best > div { text-align: end; 
                  align-self: flex-end; }
-
+}
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
@@ -633,7 +623,7 @@ footer {
         transform-origin: 50% 50% -500px; 
     }
     figure#spinner{height: 450px;
-                   transform-origin: 50% 50% -500px;
+                   transform-origin: 50% 50% -500px;}
     figure#spinner img {width:400px;
                         height:300px;
                         margin-left: -200px;
@@ -731,4 +721,4 @@ figure#spinner img{transform-origin: 50% 50% -800px;}
                        margin-left: -300px;
                        margin-top: -200px;}
 div#carousel{height:750px;}
-}}
+}
