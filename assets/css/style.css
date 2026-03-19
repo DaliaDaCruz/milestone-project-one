@@ -23,7 +23,7 @@ header {
     background-color: white;
     padding: 0 1rem;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
     box-shadow: 0 2px 2px lightblue;
     display: flex;
@@ -104,7 +104,7 @@ main {
 
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 79px;
+    margin-top: 120px;
 }
 
 /*Hero image*/
@@ -423,68 +423,68 @@ margin:0 auto;}
 
 /* Gallery section used code pen 3d carousel gallery*/
 
-div#carousel { 
- perspective: 1200px; 
-  background: #100000; 
-  padding-top: 10%; 
-  font-size:0; 
-  margin-bottom: 3rem; 
-  overflow: hidden; 
+div#carousel {
+    perspective: 1000px; 
+    background: white;
+    height: 600px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 100px; 
 }
-figure#spinner { 
-  transform-style: preserve-3d; 
-  height: 400px; 
-  transform-origin: 50% 50% -600px; 
-  transition: 1s; 
+
+figure#spinner {
+    transform-style: preserve-3d;
+    display:block;
+    height: 450px;
+    width: 100%;
+    transition: 1s;
     margin: 0 auto;
-} 
-figure#spinner img { 
-  width: 30%; max-width: 500px; 
-  position: absolute; 
-  left: 50%;
-    margin-left: -15%;
-  transform-origin: 50% 50% -500px;
-  outline:1px solid transparent; 
-   box-shadow: 0 5px 15px ligthskyblue; 
+    position: relative;
+    transform-origin: 50% 50% -500px; 
 }
-figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+
+figure#spinner img {
+    width: 45%; 
+    max-width: 550px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -22.5%; 
+    margin-top: -200px;  
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(64, 159, 218, 0.2);
+    backface-visibility: hidden;
+    transform-origin: 50% 50% -500px;
 }
+
+/* Individual Image Rotations (45 degrees each) */
+figure#spinner img:nth-child(1) { transform: rotateY(0deg); }
 figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
 figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
 figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
-figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
-figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
-figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
-figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
-div#carousel ~ span { 
-  color: #fff; 
-  margin: 5%; 
-  display: inline-block; 
-  text-decoration: none; 
-  font-size: 2rem; 
-  transition: 0.6s color; 
-  position: relative; 
-  margin-top: -6rem; 
-  border-bottom: none; 
-  line-height: 0; }
-div#carousel ~ span:hover { color: #888; cursor: pointer; }
+figure#spinner img:nth-child(5) { transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6) { transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7) { transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8) { transform: rotateY(-315deg); }
+
+/* arrows  */
 .ss-icon {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: lightskyblue;
     cursor: pointer;
     user-select: none;
-    padding: 0 20px;
-    z-index: 100;
-    position: absolute;
-    top: 50%;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 20px 50px;
 }
-/*arrow position*/
-span[onclick*="'-'"] { left: 5%; }
-span[onclick*="''"] { right: 5%; }
 
 .ss-icon:hover {
     transform: scale(1.2);
-    color: lightskyblue;
+    color: navy;
 }
 
 /*gallery image fading and popping at different times*/
@@ -493,18 +493,8 @@ span[onclick*="''"] { right: 5%; }
 }
 .card:nth-child(2) { animation-delay: 0.2s; }
 .card:nth-child(3) { animation-delay: 0.4s; }
-/*check this again*/
-#gallery{display:grid;
-        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-        gap:20px;
-        width: 90%;
-        max-width: 1200px;
-        margin:40px auto;
-        }
-#gallery img {width: 100%;
-              height: 250px;
-              object-fit:cover;
-              border-radius: 8px;}
+
+
 /* Footer */
 footer {
     flex-shrink: 0;
@@ -557,26 +547,27 @@ footer {
 
 /* Media query: large or landscape phones (320px and up) */
 @media screen and (max-width: 767px) {
-    div#carousel{perspective:1200px;
-                 padding-top:10%;
-                margin-bottom:3rem;
-                background:white;
-                overflow:hidden;}
-    figure#spinner{transform-style: preserve-3d;
-                   transition: 1s;
-                   margin:0 auto;
-                   transform-origin: 50% 50% -250px;
-                   height:300px;}
-    figure#spinner img{width:60%;
-                       max-width: 400px;
-                       position:absolute;
-                       left:50%;
-                       margin-left:-30%;
-                       transform-origin: 50% 50% -250px;
-                      outline: 1px solid transparent;}
-    .ss-icon{font-size:2.5rem;
-             margin: 0 20px;
-             margin-top:20px;}
+   main { margin-top: 110px; } 
+    
+    div#carousel {
+        height: 400px;
+        perspective: 800px;
+    }
+    figure#spinner, figure#spinner img {
+        transform-origin: 50% 50% -200px; 
+    }
+    figure#spinner img {position:absolute;
+                        left:50%;
+                        top:50%;
+        width: 80%;
+        margin-left: -40%;
+        height: 280px;
+        margin-top: -140px;
+    }
+    .ss-icon {
+        margin: 10px 20px;
+        font-size: 2.5rem;
+    }
 }                   
 
 /* Media query: tablets and larger (768px and up) */
@@ -620,7 +611,7 @@ footer {
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
-        margin-top: 79px;
+        margin-top: 100px;
     }
     
 .card img {
@@ -628,15 +619,29 @@ footer {
     height: 200px;
     object-fit: cover;
 }
-    figure#spinner {height:400px;
-                      transform-origin: 50% 50% -400px;}
-    figure#spinner img{width:45%;
-                       margin-left: -22.5%;
-                       transform-origin: 50% 50% -400px;
-                       height:350px;
-                       object-fit:cover;
-                      }
-}
+    div#carousel {
+        height: 500px;
+        perspective: 1200px;
+    }
+    figure#spinner, 
+    figure#spinner {height:450px;
+        transform-origin: 50% 50% -400px; 
+    }
+    figure#spinner img {position:absolute;
+                        left:50%;
+                        top:50%;
+                        margin-top: -175px;
+                        transform-origin: 50% 50% -400px;
+    }
+    .ss-icon {
+        display: inline-block;
+        margin: 20px 40px; 
+        cursor: pointer;
+    }
+    
+    main {
+        text-align: center; 
+    }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -673,21 +678,20 @@ footer {
 }
 
   div#carousel {
-  background: white;
-  padding-top: 10%;
-  font-size: 0;
-  margin-bottom: 3rem;
-  overflow: hidden;
-}
-    figure#spinner{width:45%;
-                   max-width:600px;
-                   transform-origin: 50% 50% -450px;
-                   }
-    figure#spinner img{width:45%;
-                   margin-left: -22.5%;
-                       height: 400px;
-                       object-fit:cover;
-                   transform-origin: 50% 50% -450px;}
+        height: 600px;
+        perspective: 1500px;
+    }
+    
+    figure#spinner img {position:absolute;
+                        left:50%;
+                        top:50%;
+                        width: 40%;
+        margin-left: -20%;
+        height: 400px;
+        margin-top: -200px;
+        transform-origin: 50% 50% -500px;
+    }
+    figure#spinner{transform-origin: 50% 50% -600px;}
 }
 @media screen and (min-width: 1200px ) {
     #why-us {
@@ -711,8 +715,7 @@ footer {
         align-self: flex-end;
     }
 figure#spinner, 
-figure#spinner img{transform-origin: 50% 50% -800px;
-    }
-div#carousel{
-    padding-top: 5%;}
-}
+figure#spinner img{transform-origin: 50% 50% -700px;}
+div#carousel{padding-top: 0;
+            height:650px;}
+}}
