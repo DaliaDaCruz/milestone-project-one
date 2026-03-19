@@ -426,7 +426,7 @@ margin:0 auto;}
 div#carousel {
     perspective: 1000px; 
     background: white;
-    height: 600px; 
+    height: 500px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -437,7 +437,7 @@ div#carousel {
 figure#spinner {
     transform-style: preserve-3d;
     display:block;
-    height: 450px;
+    height: 400px;
     width: 100%;
     transition: 1s;
     margin: 0 auto;
@@ -446,15 +446,15 @@ figure#spinner {
 }
 
 figure#spinner img {
-    width: 45%; 
-    max-width: 550px;
-    height: 400px;
+    width: 60%; 
+    max-width: 500px;
+    height: 350px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -22.5%; 
-    margin-top: -200px;  
-    object-fit: cover;
+    margin-left: -30%; 
+    margin-top: -175px;  
+    object-fit: contain;
     border: 5px solid white;
     box-shadow: 0 10px 25px rgba(64, 159, 218, 0.2);
     backface-visibility: hidden;
@@ -561,8 +561,8 @@ footer {
                         top:50%;
         width: 80%;
         margin-left: -40%;
-        height: 280px;
-        margin-top: -140px;
+        height: 250px;
+        margin-top: -125px;
     }
     .ss-icon {
         margin: 10px 20px;
@@ -630,6 +630,7 @@ footer {
     figure#spinner img {position:absolute;
                         left:50%;
                         top:50%;
+                        object-fit: contain;
                         margin-top: -175px;
                         transform-origin: 50% 50% -400px;
     }
@@ -678,20 +679,16 @@ footer {
 }
 
   div#carousel {
-        height: 600px;
+        height: 650px;
         perspective: 1500px;
     }
     
-    figure#spinner img {position:absolute;
-                        left:50%;
-                        top:50%;
-                        width: 40%;
-        margin-left: -20%;
-        height: 400px;
-        margin-top: -200px;
-        transform-origin: 50% 50% -500px;
+    figure#spinner img {width: 45%;
+        margin-left: -22.5%;
+        height: 450px;
+        margin-top: -225px;
     }
-    figure#spinner{transform-origin: 50% 50% -600px;}
+    figure#spinner, figure#spinner img {transform-origin: 50% 50% -600px;}
 }
 @media screen and (min-width: 1200px ) {
     #why-us {
@@ -715,7 +712,7 @@ footer {
         align-self: flex-end;
     }
 figure#spinner, 
-figure#spinner img{transform-origin: 50% 50% -700px;}
+figure#spinner img{transform-origin: 50% 50% -750px;}
 div#carousel{padding-top: 0;
-            height:650px;}
+            height:750px;}
 }}
