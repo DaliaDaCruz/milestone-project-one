@@ -446,15 +446,14 @@ figure#spinner {
 }
 
 figure#spinner img {
-    width: 60%; 
-    max-width: 500px;
+    width: 300px; 
     height: 350px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -30%; 
-    margin-top: -175px;  
-    object-fit: contain;
+    margin-left: -150%; 
+    margin-top: -125px;  
+    object-fit: cover;
     border: 5px solid white;
     box-shadow: 0 10px 25px rgba(64, 159, 218, 0.2);
     backface-visibility: hidden;
@@ -551,18 +550,20 @@ footer {
     
     div#carousel {
         height: 400px;
-        perspective: 800px;
+        perspective: 600px;
     }
     figure#spinner, figure#spinner img {
-        transform-origin: 50% 50% -200px; 
+        transform-origin: 50% 50% -400px; 
     }
     figure#spinner img {position:absolute;
-                        left:50%;
-                        top:50%;
-        width: 80%;
-        margin-left: -40%;
-        height: 250px;
-        margin-top: -125px;
+                        left: 50%;
+                        top: 50%;       
+                        width: 180px;
+                        margin-left: -90px;
+                        height: 220px;
+                        margin-top: -110px;
+                        transform-origin: 50% 50% -400px;
+                        object-fit:cover;
     }
     .ss-icon {
         margin: 10px 20px;
@@ -612,6 +613,7 @@ footer {
     main {
         /* Push main content down to accommodate larger header */
         margin-top: 100px;
+        text-align:center;
     }
     
 .card img {
@@ -620,19 +622,26 @@ footer {
     object-fit: cover;
 }
     div#carousel {
-        height: 500px;
+        height: 550px;
         perspective: 1200px;
     }
     figure#spinner, 
-    figure#spinner {height:450px;
-        transform-origin: 50% 50% -400px; 
+    figure#spinner img {
+        transform-origin: 50% 50% -500px; 
     }
-    figure#spinner img {position:absolute;
-                        left:50%;
-                        top:50%;
-                        object-fit: contain;
-                        margin-top: -175px;
-                        transform-origin: 50% 50% -400px;
+    figure#spinner{height: 450px;
+                   transform-origin: 50% 50% -500px;
+    figure#spinner img {width:400px;
+                        height:300px;
+                        margin-left: -200px;
+                        margin-top: -150px;
+                        left: 50%;
+                        top: 50%;
+                        position: absolute;
+                        transform-origin: 50% 50% -500px;
+                        object-fit: cover;
+                        border: 5px solid white;
+                        box-shadow:0 10px 25px rgba(64, 159, 218, 0.2);
     }
     .ss-icon {
         display: inline-block;
@@ -679,14 +688,15 @@ footer {
 }
 
   div#carousel {
-        height: 650px;
+        height: 600px;
         perspective: 1500px;
     }
     
-    figure#spinner img {width: 45%;
-        margin-left: -22.5%;
-        height: 450px;
-        margin-top: -225px;
+    figure#spinner img {width: 500px;
+        margin-left: -250px;
+        height: 350px;
+        margin-top: -175px;
+                        object-fit:cover;
     }
     figure#spinner, figure#spinner img {transform-origin: 50% 50% -600px;}
 }
@@ -712,7 +722,10 @@ footer {
         align-self: flex-end;
     }
 figure#spinner, 
-figure#spinner img{transform-origin: 50% 50% -750px;}
-div#carousel{padding-top: 0;
-            height:750px;}
+figure#spinner img{transform-origin: 50% 50% -800px;}
+    figure#spinner img{width:600px;
+                       height:400px;
+                       margin-left: -300px;
+                       margin-top: -200px;}
+div#carousel{height:750px;}
 }}
