@@ -107,11 +107,18 @@
     <!--spinner carousel java codepen-->
    <script>
  var angle = 0;
-function galleryspin(sign) { 
-spinner = document.querySelector("#spinner");
-if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
-spinner.setAttribute("style","style","transform:rotateY("+ angle +"deg);");
-}
+
+    function gallerySpin(sign) { 
+        var spinner = document.querySelector("#spinner");
+        
+        if (!sign) { 
+            angle = angle + 45; 
+        } else { 
+            angle = angle - 45; 
+        }
+        
+        spinner.style.transform = "rotateY(" + angle + "deg)";
+    }
 </script>
     
 </body>
