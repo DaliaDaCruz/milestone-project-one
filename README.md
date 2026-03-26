@@ -115,7 +115,7 @@ It is very important to use original pictures and as i mentioned, due to many la
 - The website has a Homepage, and then 3 further pages. Services, Gallery and Contact.
     - Homepage - Landing page with brief descriptions and reasons why to choose this company.
     - Services - Provides images and text information about the service and price. 
-    - Gallery - Provides images of jobs done in the past with before and after collage pictures. Avoiding customers to look back and forward at pictures to “compare the differences”. Added a 3d carousel using codepen, to the galllery as it keeps visitor engaged.
+    - Gallery - Provides images of jobs done in the past with before and after collage pictures. Avoiding customers to look back and forward at pictures to “compare the differences”. Added a 3d carousel using codepen, to the galllery as it keeps visitor engaged. Used carousel from codepen to do the gallery section, tried different ways to make it look nice but settled for a simpler look.
     - Contact -Provides a map, to show we are in North London but provide services to a wider area. Opening hours information, contact details and a message section, used code pen example to create my form too, in case someone has a query or needs a quote.
 
 ### Navigation Bar

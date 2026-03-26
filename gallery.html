@@ -19,26 +19,30 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-     <!--Getting buttons to work on gallery-->  
+    <!--Getting buttons to work on gallery-->
     <style>
-    main {overflow:hidden;
-    max-width:1200px;
-    margin:0 auto;
-    text-align: center;}
-        
-    
-    .ss-icon{
-    display:inline-block;
-    font-size: 4rem;
-    color:lightskyblue;
-    cursor:pointer;
-    user-select:none;
-    margin:0 40px;
-    transition: transform 0.3s ease, color 0.3s ease;
-    }
-    
-    .ss-icon:hover {color: navy;
-    transform:scale(1.2);}
+        main {
+            overflow: hidden;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .ss-icon {
+            display: inline-block;
+            font-size: 4rem;
+            color: lightskyblue;
+            cursor: pointer;
+            user-select: none;
+            margin: 0 40px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .ss-icon:hover {
+            color: navy;
+            transform: scale(1.2);
+        }
     </style>
 
 </head>
@@ -62,21 +66,26 @@
     </header>
     <!--main content-->
 
-<main>
-<div id="carousel">
-  <figure id="spinner">
-    <img src="assets/images/armchair.jpeg" alt="armchair cleaning">
-    <img src="assets/images/ape.jpeg" alt="food trailer van">
-    <img src="assets/images/buggy.jpeg" alt="Buggy">
-    <img src="assets/images/car.jpg" alt="car cleaning">
-    <img src="assets/images/guest-bed.jpeg" alt="guest bed hotel">
-    <img src="assets/images/hotel.jpeg" alt="hotel carpet/matress">
-    <img src="assets/images/leather-car-cleang.jpg" alt="leather car cleaning">
-    <img src="assets/images/rug.jpeg" alt="rug cleaning"> 
-</figure>
-</div>
+    <main>
+        <div id="carousel">
+            <figure id="spinner">
+                <img src="assets/images/armchair.jpeg" alt="armchair cleaning">
+                <img src="assets/images/ape.jpeg" alt="food trailer van">
+                <img src="assets/images/buggy.jpeg" alt="Buggy">
+                <img src="assets/images/car.jpg" alt="car cleaning">
+                <img src="assets/images/guest-bed.jpeg" alt="guest bed hotel">
+                <img src="assets/images/hotel.jpeg" alt="hotel carpet/matress">
+                <img src="assets/images/leather-car-clean.jpg" alt="leather car cleaning">
+                <img src="assets/images/rug.jpeg" alt="rug cleaning">
+            </figure>
+        </div>
+        <section id="gallery-header">
+            <h2>Before & After</h2>
+            <p>Take a look at some of our recent eco-friendly jobs.</p>
+            <hr>
+        </section>
 
-</main>
+    </main>
 
     <!--footer-->
     <footer>
@@ -103,16 +112,16 @@
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 
     <!--spinner carousel java codepen-->
-   <script>
- var angle = 0;
+    <script>
+        var angle = 0;
 
-    function autoSpin() { 
-      angle = angle - 45; // Spins forward every 3 seconds
-        spinner.style.transform = "rotateY(" + angle + "deg)";
-    }  
-        
-</script>
-    
+        function autoSpin() {
+            angle = angle - 45; // Spins forward every 3 seconds
+            spinner.style.transform = "rotateY(" + angle + "deg)";
+        }
+
+    </script>
+
 </body>
 
 </html>
