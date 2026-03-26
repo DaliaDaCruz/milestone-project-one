@@ -424,7 +424,7 @@ margin:0 auto;}
 /* Gallery section used code pen 3d carousel gallery*/
 
 div#carousel {
-    perspective: 1000px; 
+    perspective: 1200px; 
     background: white;
     height: 600px; 
     display: flex;
@@ -443,14 +443,17 @@ position:relative;}
 
 figure#spinner img {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 400px;    
-    height: 300px;           
+    left: 50%;
+    top: 50%;
+    width: 450px;    
+    height: 300px;   
+    margin-left: -225px;
+    margin-top: -150px;        
     transform-origin: 50% 50% -500px; 
     backface-visibility: hidden; 
     object-fit: cover;
     border: 5px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* Individual Image Rotations (45 degrees each) */
@@ -543,10 +546,9 @@ footer {
     
     div#carousel {
         height: 400px;
-        perspective: 600px;
     }
     figure#spinner, figure#spinner img {
-        transform-origin: 50% 50% -400px; 
+        transform-origin: 50% 50% -4000px; 
     }
     figure#spinner img {position:absolute;
                         left: 50%;
@@ -620,7 +622,7 @@ footer {
     }
     figure#spinner, 
     figure#spinner img {
-        transform-origin: 50% 50% -500px; 
+        transform-origin: 50% 50% -650px; 
     }
     figure#spinner{height: 450px;
                    transform-origin: 50% 50% -500px;}
@@ -682,7 +684,7 @@ footer {
 
   div#carousel {
         height: 600px;
-        perspective: 1500px;
+        perspective: 150px;
     }
     
     figure#spinner img {width: 500px;
@@ -714,11 +716,13 @@ footer {
     #innovative>div {
         align-self: flex-end;
     }
+div#carousel{height:800px;
+perspective: 2000px;}    
 figure#spinner, 
-figure#spinner img{transform-origin: 50% 50% -800px;}
-    figure#spinner img{width:600px;
-                       height:400px;
-                       margin-left: -300px;
-                       margin-top: -200px;}
-div#carousel{height:750px;}
-}
+figure#spinner img{transform-origin: 50% 50% -900px;}
+    figure#spinner img{width:650px;
+                       height:450px;
+                       margin-left: -325px;
+                       margin-top: -225px;
+backface-visibility: hidden;
+object-fit:cover;}}
