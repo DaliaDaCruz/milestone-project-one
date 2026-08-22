@@ -9,7 +9,7 @@
     <meta name="description" content="clean, cleaning, sanitising, business cleaning, London">
     <meta name="keywords"
         content="clean, cleaning, sanitise, car cleaning, matress cleaning, sanitising, London, business cleaners">
-    <title>Milestone Project One</title>
+    <title>Gallery | Eco SanitAll</title>
 
     <!--Favicon generated with redketchup.io-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -19,32 +19,30 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-    <!--Getting buttons to work on gallery-->
+    <!-- Gallery Custom Button Styles -->
     <style>
-        main {
-            overflow: hidden;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
+        .gallery-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            gap: 20px;
         }
-
 
         .ss-icon {
             display: inline-block;
-            font-size: 4rem;
-            color: lightskyblue;
+            font-size: 3rem;
+            color: rgb(64, 159, 218);
             cursor: pointer;
             user-select: none;
-            margin: 0 40px;
             transition: transform 0.3s ease, color 0.3s ease;
         }
 
         .ss-icon:hover {
-            color: navy;
+            color: rgb(30, 80, 120);
             transform: scale(1.2);
         }
     </style>
-
 </head>
 
 <body>
@@ -64,8 +62,8 @@
             </ul>
         </nav>
     </header>
-    <!--main content-->
 
+    <!--main content-->
     <main>
         <div id="carousel">
             <figure id="spinner">
@@ -79,12 +77,18 @@
                 <img src="assets/images/rug.jpeg" alt="rug cleaning">
             </figure>
         </div>
+
+        <!-- Interactive Navigation Controls -->
+        <div class="gallery-controls">
+            <span class="ss-icon" onclick="gallerySpin(1)" title="Previous Image">&#10094;</span>
+            <span class="ss-icon" onclick="gallerySpin(-1)" title="Next Image">&#10095;</span>
+        </div>
+
         <section id="gallery-header">
             <h2>Before & After</h2>
             <p>Take a look at some of our recent eco-friendly jobs.</p>
             <hr>
         </section>
-
     </main>
 
     <!--footer-->
@@ -111,17 +115,34 @@
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 
-    <!--spinner carousel java codepen-->
+    <!-- Carousel Controls JavaScript -->
     <script>
         var angle = 0;
+        var spinner = document.getElementById("spinner");
+        var timer;
+
+        function gallerySpin(sign) {
+            // Sign = 1 turns right (+45 deg), Sign = -1 turns left (-45 deg)
+            angle += sign * 45;
+            spinner.style.transform = "rotateY(" + angle + "deg)";
+            
+            // Reset auto timer on manual click so it doesn't spin immediately again
+            resetTimer();
+        }
 
         function autoSpin() {
-            angle = angle - 45; // Spins forward every 3 seconds
+            angle -= 45;
             spinner.style.transform = "rotateY(" + angle + "deg)";
         }
 
-    </script>
+        function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(autoSpin, 4500); // Rotates every 4.5 seconds (slower & cleaner)
+        }
 
+        // Start auto-rotation on page load
+        resetTimer();
+    </script>
 </body>
 
 </html>

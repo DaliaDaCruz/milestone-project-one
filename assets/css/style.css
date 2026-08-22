@@ -1,51 +1,42 @@
-/*Google font imports*/
-@import url('https://fonts.googleapis.com/css2?family=BpmfLansui:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900 &family=BpmfHuninn:wght@200..700&display=swap');
+/* 1. Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
 
-/* Asterisk wildcard selector to override default styles added by the browser */
+/* 2. Global Reset & Box Sizing */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
-/* General styles */
+html {
+    font-size: 15px; /* Base scaling across the site */
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Generic project styles */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
     color: rgb(64, 159, 218);
-    font-family: 'BpmfLansui', sans-serif;
+    background: white;
 }
 
-/* Header */
-header {
-    background-color: white;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    box-shadow: 0 2px 2px lightblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-header a {
-    text-decoration: none;
-    color: inherit;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'BpmfLansui', sans-serif;
-    letter-spacing: 2px;
+/* 3. Typography & Headings */
+h1, h2, h3, h4, h5, h6, .display-6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
     color: rgb(64, 159, 218);
 }
 
-h1,
-h2 {
+h1, h2 {
     text-transform: uppercase;
 }
 
@@ -53,11 +44,65 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/* Paragraph Defaults */
+p {
+    margin-bottom: 1.5em;
+    text-align: justify;
+    font-size: 0.95rem;
+    color: rgb(92, 158, 223);
+}
+
+/* Equalizing Font Sizes for About Us & Why Choose Us Sections */
+#about-us p, 
+#why-us p {
+    font-size: 0.95rem;     
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: rgb(92, 158, 223);
+}
+
+#why-us h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid lightblue;
+    margin: 15px 0;
+}
+
+/* 4. Header & Navigation */
+header {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 2px lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo {
+    font-size: 2rem;
+    line-height: 1.2; 
+    margin: 0;
+}
+
 #menu {
     display: flex;
     font-size: 110%;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     list-style: none;
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .list-unstyled {
@@ -65,15 +110,29 @@ h2 {
     text-align: center;
 }
 
-#menu>li {
-    margin-bottom: 1em;
+#menu > li {
+    margin: 0;
 }
 
+/* Darker color for all navbar page links */
+#menu a {
+    padding: 0.5rem 0.25rem;
+    color: rgb(30, 80, 120); /* Fixed syntax & made darker for contrast */          
+    font-weight: 600;         
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Darker hover state when user hovers over a page link */
+#menu a:hover {
+    color: rgb(10, 40, 70);           
+}
+
+/* Active page indicator */
 .active {
-    border-bottom: 1px solid rgb(64, 159, 218);
+    border-bottom: 2px solid rgb(30, 80, 120);
 }
 
-/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: white;
@@ -85,8 +144,7 @@ nav {
     top: 100%;
 }
 
-/* Nav toggle */
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
     display: block;
 }
 
@@ -99,15 +157,13 @@ nav {
     font-size: 2rem;
 }
 
-/* Main content */
+/* 5. Main Content Structure */
 main {
-
-    /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 120px;
+    margin-top: 60px; /* Reduced to eliminate gap below navbar */
 }
 
-/*Hero image*/
+/* Hero Section */
 #hero {
     position: relative;
     height: 600px;
@@ -136,6 +192,7 @@ main {
     color: white;
 }
 
+/* About Us Section */
 #about-us {
     width: 90%;
     max-width: 1100px;
@@ -146,22 +203,9 @@ main {
     margin-bottom: 30px;
     text-align: center;
     font-size: clamp(2rem, 5vw, 3rem);
-    /*responsive font tutorial youtube*/
 }
 
-#innovative>div,
-#best>div {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 1.5em;
-    text-align: justify;
-    color: lightskyblue
-}
-
-/*Why choose us section*/
+/* Why Choose Us Section */
 #why-us {
     width: 90%;
     max-width: 1200px;
@@ -175,107 +219,148 @@ p {
     font-size: 280%;
 }
 
+#why-us h3 {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; 
+}
+
 #why-us p {
     padding: 0 20px;
-    text-align: justify;
-    line-height: 1.6;
     hyphens: auto;
-    /*prevents huge gaps on text according to youtube tutorial*/
 }
 
-hr {
-    border: none;
-    border-top: 2px solid lightblue;
-    margin: 15px 0;
+#innovative > div,
+#best > div {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
+#cover-text h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
 
-/*Opening times contact page*/
-#opening-times>div {
+#cover-text .slogan {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* 6. Contact Page & Opening Times */
+#contact-top-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#opening-times,
+#contact-info {
     text-align: center;
-    padding: 10px;
 }
 
-#opening-times {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+#opening-times h2,
+#contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: rgb(64, 159, 218);
 }
 
-/*divider img*/
-.divider-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 5px 0;
+/* Paragraph colors to match across all sections */
+#opening-times p,
+#contact-info li,
+#contact-info p {
+    font-size: 0.95rem;
+    color: rgb(92, 158, 223) !important;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    text-align: center;
 }
 
-.divider-image img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid lightskyblue;
-}
-
-/* Message contact form*/
-* {
-    margin: 0;
+#contact-info ul {
     padding: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    list-style: none;
 }
 
-body {
-    font-family: "Bpmf Lansui", sans-serif;
-    font-weight: 100;
-    font-size: 12px;
-    line-height: 30px;
-    color: lightskyblue;
-    background: white;
+#contact-info i {
+    margin-right: 8px;
+    color: rgb(64, 159, 218);
 }
 
+#cover-circle-bg {
+    background: url("../images/Location.jpg") no-repeat center center;
+    background-size: cover;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+    flex-shrink: 0;
+}
+
+/* Side-by-Side layout on Desktop screens */
+@media screen and (min-width: 768px) {
+    #contact-top-wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #opening-times {
+        text-align: right;
+        flex: 1;
+    }
+
+    #opening-times p {
+        text-align: right;
+    }
+
+    #contact-info {
+        text-align: left;
+        flex: 1;
+    }
+
+    #contact-info li,
+    #contact-info p {
+        text-align: left;
+    }
+}
+
+/* Contact Form Styling */
 .container {
+    width: 90%;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 0 20px;
-
-}
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact textarea,
-#contact button[type="submit"] {
-    font: 400 12px/16px "Bpmf Lansui", sans-serif;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(64, 159, 218, 0.15);
 }
 
 #contact h3 {
-    display: block;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgb(64, 159, 218);
+    margin-bottom: 20px;
 }
 
-#contact h4 {
-    margin: 5px 0 15px;
-    display: block;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
+#contact fieldset {
+    border: none; 
     padding: 0;
+    margin: 0 0 15px 0;
     width: 100%;
 }
 
@@ -284,106 +369,44 @@ fieldset {
 #contact input[type="tel"],
 #contact textarea {
     width: 100%;
-    border: 1px solid #ccc;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-}
-
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact textarea:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 1px solid lightblue;
-}
-
-#contact textarea {
-    height: 100px;
-    width: 100%;
-    max-width: 100%;
-    resize: vertical;
-}
-
-#contact button[type="submit"] {
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    background: #4CAF50;
-    color: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
-}
-
-#contact button[type="submit"]:hover {
-    background: #43A047;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 12px 15px;
+    border: 2px solid lightblue;
+    border-radius: 6px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
 #contact input:focus,
 #contact textarea:focus {
-    outline: 0;
-    border: 1px solid #aaa;
+    border-color: rgb(64, 159, 218);
 }
 
-::-webkit-input-placeholder {
-    color: #888;
-}
-
-:-moz-placeholder {
-    color: #888;
-}
-
-::-moz-placeholder {
-    color: #888;
-}
-
-:-ms-input-placeholder {
-    color: #888;
-}
-
-/*Contact details on ecosanitall*/
-#contact-info>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    box-shadow: none;
-}
-
-#contact-info {
-    background: transparent;
-    box-shadow: none;
-    padding: 10px 0;
-    margin: 0 auto;
-    width: 100%;
-}
-
-#contact-info h2,
-#contact-info h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-#contact-info textarea {
-    height: 100px;
-    width: 100%;
-    max-width: 100%;
+#contact textarea {
+    height: 120px;
     resize: vertical;
 }
 
-/*service section*/
+#contact-submit {
+    width: 100%;
+    background-color: rgb(64, 159, 218);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-submit:hover {
+    background-color: rgb(30, 110, 170);
+}
+
+/* 7. Services Section */
 .services-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -400,7 +423,23 @@ fieldset {
     display: flex;
     flex-direction: column;
     height: auto;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.4s; }
 
 .card:hover {
     transform: translateY(-5px);
@@ -421,7 +460,7 @@ fieldset {
 
 .card-text {
     margin-bottom: 15px;
-    color: lightskyblue;
+    color: rgb(92, 158, 223);
     flex: 1;
 }
 
@@ -446,12 +485,11 @@ fieldset {
     border-top-right-radius: 8px;
 }
 
-/* Gallery section used code pen 3d carousel gallery*/
-/*Gallery header*/
+/* 8. Gallery Carousel Section */
 #gallery-header {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 20px 0;
     width: 90%;
@@ -459,14 +497,14 @@ fieldset {
     margin: 0 auto;
 }
 
-#gallery-header h3 {
+#gallery-header h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: rgb(64, 159, 218);
 }
 
 #gallery-header p {
-    color: lightskyblue;
+    color: rgb(64, 159, 218);
     text-align: center;
     font-size: 1.1rem;
 }
@@ -487,15 +525,15 @@ div#carousel {
     margin-top: 40px;
     position: relative;
     perspective-origin: 50% 50%;
-    overflow: visible;
+    overflow: hidden;
 }
 
 figure#spinner {
     transform-style: preserve-3d;
     height: 300px;
     width: 400px;
-    transition: 2s ease-in-out;
-    transform-origin: 50% 50% -500px;
+    transition: transform 1s ease-in-out;
+    transform-origin: 50% 50% -400px;
     animation: galleryRotate 60s infinite linear;
     position: relative;
 }
@@ -504,72 +542,47 @@ figure#spinner img {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 400px;
-    height: 300px;
-    margin-left: -200px;
-    margin-top: -150px;
-    transform-origin: 50% 50% -500px;
+    width: 320px;
+    height: 240px;
+    margin-left: -160px;
+    margin-top: -140px;
+    transform-origin: 50% 50% -400px;
     backface-visibility: hidden;
-    object-fit: cover;
-    border: 5px solid white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: 1s ease, box-shadow 1s ease;
+    object-fit: contain;
+    border: 3px solid rgb(64, 159, 218);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Individual Image Rotations (45 degrees each) */
-figure#spinner img:nth-child(1) {
-    transform: rotateY(0deg);
-}
-
-figure#spinner img:nth-child(2) {
-    transform: rotateY(45deg);
-}
-
-figure#spinner img:nth-child(3) {
-    transform: rotateY(90deg);
-}
-
-figure#spinner img:nth-child(4) {
-    transform: rotateY(135deg);
-}
-
-figure#spinner img:nth-child(5) {
-    transform: rotateY(180deg);
-}
-
-figure#spinner img:nth-child(6) {
-    transform: rotateY(225deg);
-}
-
-figure#spinner img:nth-child(7) {
-    transform: rotateY(270deg);
-}
-
-figure#spinner img:nth-child(8) {
-    transform: rotateY(315deg);
-}
+figure#spinner img:nth-child(1) { transform: rotateY(0deg); }
+figure#spinner img:nth-child(2) { transform: rotateY(45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(135deg); }
+figure#spinner img:nth-child(5) { transform: rotateY(180deg); }
+figure#spinner img:nth-child(6) { transform: rotateY(225deg); }
+figure#spinner img:nth-child(7) { transform: rotateY(270deg); }
+figure#spinner img:nth-child(8) { transform: rotateY(315deg); }
 
 figure#spinner:hover {
-    animation-play-state: paused;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-/*gallery image fading and popping at different times*/
-.card {
-    opacity: 0;
-    animation: fadeInUp 0.8s ease-out forwards;
+/* 9. Miscellaneous & Footer */
+.divider-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
 }
 
-.card:nth-child(2) {
-    animation-delay: 0.2s;
+.divider-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid lightskyblue;
 }
 
-.card:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-
-/* Footer */
 footer {
     flex-shrink: 0;
     background-color: white;
@@ -578,7 +591,6 @@ footer {
     box-shadow: 0 -2px 2px lightblue;
 }
 
-/* social media*/
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -593,37 +605,10 @@ footer {
     color: lightskyblue;
 }
 
-#cover-circle-bg {
-    background: url("../images/Location.jpg") no-repeat center top;
-    background-size: cover;
-    height: 90vw;
-    width: 90vw;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*adding fading to carousel spinner gallery page*/
-@keyframes galleryRotate {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-/* Media query: large or landscape phones (320px and up) */
+/* 10. Media Queries */
 @media screen and (max-width: 767px) {
     main {
-        margin-top: 110px;
+        margin-top: 60px;
     }
 
     div#carousel {
@@ -639,13 +624,9 @@ footer {
         margin-left: -125px;
         margin-top: -90px;
     }
-
 }
 
-/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-
-    /* Header */
     nav {
         display: block;
         position: relative;
@@ -659,8 +640,8 @@ footer {
     }
 
     #logo {
-        font-size: 280%;
-        line-height: 75px;
+        font-size: 2.2rem;
+        line-height: 1.2; /* Fixed to prevent massive vertical expansion */
         margin: 0 0.5rem;
     }
 
@@ -671,46 +652,42 @@ footer {
         width: 100%;
     }
 
-    #innovative>div,
-    #best>div {
+    #innovative > div,
+    #best > div {
         width: 75%;
     }
 
-    #best>div {
+    #best > div {
         text-align: end;
         align-self: flex-end;
     }
+
+    main {
+        margin-top: 60px; /* Reduced gap */
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    div#carousel {
+        height: 500px;
+        perspective: 1200px;
+    }
+
+    figure#spinner,
+    figure#spinner img {
+        width: 400px;
+        height: 280px;
+        margin-left: -200px;
+        margin-top: -140px;
+        transform-origin: 50% 50% -550px;
+    }
 }
 
-/* Main content */
-main {
-    /* Push main content down to accommodate larger header */
-    margin-top: 180px;
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-div#carousel {
-    height: 500px;
-    perspective: 1200px;
-}
-
-figure#spinner,
-figure#spinner img {
-    width: 400px;
-    height: 280px;
-    margin-left: -200px;
-    margin-top: -140px;
-    transform-origin: 50% 50% -550px;
-}
-
-
-/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid white;
@@ -721,13 +698,13 @@ figure#spinner img {
         flex-direction: row;
     }
 
-    #why-us>div {
+    #why-us > div {
         padding: 0 40px;
         flex: 1;
     }
 
-    #innovative>div,
-    #best>div {
+    #innovative > div,
+    #best > div {
         width: 100%;
         max-width: 500px;
     }
@@ -737,20 +714,20 @@ figure#spinner img {
     }
 
     #best {
-        order: 1
+        order: 1;
     }
 
-    #best>div {
+    #best > div {
         align-self: flex-start;
         text-align: left;
     }
 
-    #innovative>div {
+    #innovative > div {
         align-self: flex-end;
     }
 
     main {
-        margin-top: 180px;
+        margin-top: 60px; /* Reduced gap */
     }
 
     div#carousel {
@@ -774,7 +751,7 @@ figure#spinner img {
         flex-direction: row;
     }
 
-    #why-us>div {
+    #why-us > div {
         flex: 1;
     }
 
@@ -782,21 +759,24 @@ figure#spinner img {
         order: 1;
     }
 
-    #best>div {
+    #best > div {
         align-self: self-start;
     }
 
-    #innovative>div {
+    #innovative > div {
         align-self: flex-end;
     }
-    main{margin-top:180px;}
+
+    main {
+        margin-top: 60px; /* Fixed: changed from 180px to 60px */
+    }
 
     div#carousel {
         height: 750px;
         perspective: 2500px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     figure#spinner,
